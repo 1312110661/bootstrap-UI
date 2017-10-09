@@ -1,0 +1,12 @@
+@charset "utf-8";
+/*表格样式*/
+
+/*修改表格thead颜色*/
+.table thead{
+	background-color: #eaeaea;
+}
+.table thead th i{
+	float: right;
+	padding-right: 10px;
+	margin-top: 5px;
+}

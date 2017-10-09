@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>其他样式</title>
+		<link rel="stylesheet" href="../bootstrap/css/bootstrap.css" />
+		<link rel="stylesheet" href="../bootstrap/css/bootstrapCopy.css" />
+		<link rel="stylesheet" href="../definedCss/otherIndex.css" />
+		<link rel="stylesheet" href="../definedCss/iconIndex.css" />
+		<link rel="stylesheet" href="../definedCss/panelIndex.css" />
+		<script src="../bootstrap/js/jquery-1.8.3.min.js" type="text/javascript"></script>
+		<script src="../bootstrap/js/bootstrap.min.js" type="text/javascript"></script>
+		<script src="../styleInteractionJs/styleInteraction.js" type="text/javascript"></script>
+	</head>
+	<body>
+
+	<div style="width:70%;margin:50px auto;">
+		
+			<h4>面包屑&nbsp;</h4>
+			
+			<ol class="breadcrumb">
+				<li><a href="#">Title1主页</a></li>
+				<li><a href="#">Title2</a></li>
+				<li class="active">Title3</li>
+			</ol>
+
+
+			<h4 style="margin-top: 40px;">分页&nbsp;</h4>
+			<nav aria-label="Page navigation">
+				<ul class="pagination  pagination-sm">
+					<li class="page-liPrev">
+						<a href="#" aria-label="Previous">
+							<span aria-hidden="true" class='icon-sameAttr16 defined-greyPagePrev'></span>
+						</a>
+					</li>
+					<li class="pagination-li active"><a href="#" >1</a></li>
+					<li class="pagination-li"><a href="#">2</a></li>
+					<li class="pagination-li"><a href="#">3</a></li>
+					<li class="pagination-li"><a href="#">4</a></li>
+					<li class="pagination-li"><a href="#">5</a></li>
+					<li class="page-liNext">
+						<a href="#" aria-label="Next">
+							<span aria-hidden="true" class='icon-sameAttr16 defined-greyPageNext'></span>
+						</a>
+					</li>
+					<li class="each-page">
+						<span>每页</span>
+					</li>
+					<li class="each-inputPage">
+						<input type="text" placeholder="10"/>
+					</li>
+					<li class="each-pageNum">
+						<span>条</span>
+					</li>
+				</ul>
+			</nav>
+				<!--分页，页码点击样式交互-->
+			<script>
+				tba($(".pagination-li"), "active");
+			</script>
+			
+
+			
+			
+			
+			<h4 style="margin-top: 40px;">上下翻页分页不可点击禁止样式&nbsp;</h4>
+			<nav aria-label="Page navigation" >
+				<ul class="pagination  pagination-sm">
+					<li class="page-liPrev page-disablePrev">
+						<a href="#" aria-label="Previous" >
+							<span aria-hidden="true" class='icon-sameAttr16 defined-disablePagePrev'></span>
+						</a>
+					</li>
+					<li class="pagination-li active"><a href="#" >1</a></li>
+					<li class="pagination-li"><a href="#">2</a></li>
+					<li class="pagination-li"><a href="#">3</a></li>
+					<li class="pagination-li"><a href="#">4</a></li>
+					<li class="pagination-li"><a href="#">5</a></li>
+					<li class="page-liNext page-disablePageNext">
+						<a href="#" aria-label="Next">
+							<span aria-hidden="true" class='icon-sameAttr16 defined-disablePageNext'></span>
+						</a>
+					</li>
+					<li class="each-page">
+						<span>每页</span>
+					</li>
+					<li class="each-inputPage">
+						<input type="text" placeholder="10"/>
+					</li>
+					<li class="each-pageNum">
+						<span>条</span>
+					</li>
+				</ul>
+			</nav>
+			
+
+
+			
+			<h4 style="margin-top: 40px;">标签式的导航菜单</h4>
+			<ul class="nav nav-tabs defined-tabs">
+				<li><a href="#">摘要信息</a></li>
+				<li class="defined-tabActive"><a href="#">详情信息</a></li>
+				<li><a href="#">主要信息</a></li>
+				<li><a href="#">概要信息</a></li>
+				<li><a href="#">其他</a></li>
+			</ul>
+			
+			<script>
+				tba($(".defined-tabs li"), "defined-tabActive");
+			</script>
+			
+
+
+
+
+
+
+			<h4 style="margin-top: 40px;">进度条</h4>
+			<div class="defined-progressREC">
+				<div class="defined-progress-border">
+					<div class="progress progress-striped active">
+						<div class="progress-bar progress-bar-success" role="progressbar"
+							 aria-valuenow="60" aria-valuemin="0" aria-valuemax="100"
+							 style="width: 60%;">
+						</div>
+					</div>
+				</div>
+				<span class="sr-only">60%</span>
+			</div>
+
+
+
+
+
+			
+			<h4 style="margin-top: 40px;">步骤条一</h4>
+			<div class="step">
+				<div class="step-bar">
+					<p class="step-describe">步骤描述</p>
+					<i class='icon-sameAttr16 defined-agree'></i>
+					<i class="step-line bg-color00A2F7" ></i>		
+					<p class="step-operator">操作人<strong class="color00A2F7">[状态]</strong></p>
+					<p class="step-time">2011.06.20 10:01:01</p>
+				</div>
+				<div class="step-bar">
+					<p class="step-describe">步骤描述</p>
+					<i class='icon-sameAttr16 defined-hoverRadiobox'></i>
+					<i class="step-line bg-colorE9E9E9" ></i>		
+					<p class="step-operator">操作人<strong class="color00A2F7">[状态]</strong><i class='icon-sameAttr16 defined-stepComments'></i></p>
+					<p class="step-time">2011.06.20 10:01:01</p>
+				</div>
+				<div class="step-bar">
+					<p class="step-describe">步骤描述</p>
+					<i class='icon-sameAttr16 defined-radiobox' ></i>
+					<i class="step-line bg-colorE9E9E9" ></i>		
+					<p class="step-operator">操作人<strong class="color999">[状态]</strong></p>
+					<p class="step-time">2011.06.20 10:01:01</p>
+				</div>
+				<div class="step-bar">
+					<p class="step-describe">步骤描述</p>
+					<i class='icon-sameAttr16 defined-radiobox'></i>
+					<p class="step-operator">操作人<strong class="color999">[状态]</strong></p>
+					<p class="step-time">2011.06.20 10:01:01</p>
+				</div>
+			</div>	
+			
+
+
+
+
+
+				
+			<h4 style="margin-top: 40px;">步骤条二</h4>
+				
+			<div class="step">
+				<div class="step-bar">
+					<p class="step-describe">步骤描述</p>
+					<i class='icon-sameAttr16 defined-agree'></i>
+					<i class="step-line bg-color00A2F7" ></i>		
+					<p class="step-operator">操作人<strong class="color00A2F7">[状态]</strong></p>
+					<p class="step-time">2011.06.20 10:01:01</p>
+				</div>
+				<div class="step-bar">
+					<p class="step-describe">步骤描述</p>
+					<i class='icon-sameAttr16 defined-agree'></i>
+					<i class="step-line bg-color00A2F7" ></i>		
+					<p class="step-operator">操作人<strong class="color00A2F7">[状态]</strong><i class='icon-sameAttr16 defined-stepComments'></i></p>
+					<p class="step-time">2011.06.20 10:01:01</p>
+				</div>
+				<div class="step-bar">
+					<p class="step-describe">步骤描述</p>
+					<i class='icon-sameAttr16 defined-agree'></i>
+					<i class="step-line bg-colorEC6868" ></i>	
+					<p class="step-operator">操作人<strong class="color999">[状态]</strong></p>
+					<p class="step-time">2011.06.20 10:01:01</p>
+				</div>
+				<div class="step-bar">
+					<p class="step-describe">步骤描述</p>
+					<i class='icon-sameAttr16 defined-disagree'></i>
+					<p class="step-operator">操作人<strong class="colorEC6868">[状态]</strong></p>
+					<p class="step-time">2011.06.20 10:01:01</p>
+				</div>
+				
+			</div>	
+				
+			<h4 style="margin-top: 40px;">步骤条三</h4>
+				
+			<div class="step">
+				<div class="step-bar">
+					<p class="step-describe">步骤描述</p>
+					<i class='icon-sameAttr16 defined-agree'></i>
+					<i class="step-line bg-color00A2F7" ></i>		
+					<p class="step-operator">操作人<strong class="color00A2F7">[状态]</strong></p>
+					<p class="step-time">2011.06.20 10:01:01</p>
+				</div>
+				<div class="step-bar">
+					<p class="step-describe">步骤描述</p>
+					<i class='icon-sameAttr16 defined-agree'></i>
+					<i class="step-line bg-colorEC6868" ></i>	
+					<p class="step-operator">操作人<strong class="color00A2F7">[状态]</strong></p>
+					<p class="step-time">2011.06.20 10:01:01</p>
+				</div>
+				<div class="step-bar">
+					<p class="step-describe">步骤描述</p>
+					<i class='icon-sameAttr16 defined-disagree'></i>
+					<i class="step-line bg-colorE9E9E9" ></i>			
+					<p class="step-operator">操作人<strong class="colorEC6868">[状态]</strong></p>
+					<p class="step-time">2011.06.20 10:01:01</p>
+				</div>
+				<div class="step-bar">
+					<p class="step-describe">步骤描述</p>
+					<i class='icon-sameAttr16 defined-radiobox'></i>
+					<p class="step-operator">操作人<strong class="color999">[状态]</strong></p>
+					<p class="step-time">2011.06.20 10:01:01</p>
+				</div>
+				
+			</div>	
+				
+			
+			<h4 style="margin-top: 40px;">步骤条四</h4>
+				
+			<div class="step">
+				<div class="step-bar">
+					<p class="step-describe">步骤描述</p>
+					<i class='icon-sameAttr16 defined-agree'></i>
+					<i class="step-line bg-color00A2F7" ></i>		
+					<p class="step-operator">操作人<strong class="color00A2F7">[状态]</strong></p>
+					<p class="step-time">2011.06.20 10:01:01</p>
+				</div>
+				<div class="step-bar">
+					<p class="step-describe">步骤描述</p>
+					<i class='icon-sameAttr16 defined-agree'></i>
+					<i class="step-line bg-color00A2F7" ></i>		
+					<p class="step-operator">操作人<strong class="color00A2F7">[状态]</strong></p>
+					<p class="step-time">2011.06.20 10:01:01</p>
+				</div>
+				<div class="step-bar">
+					<p class="step-describe">步骤描述</p>
+					<i class='icon-sameAttr16 defined-agree'></i>
+					<i class="step-line bg-color00A2F7" ></i>	
+					<p class="step-operator">操作人<strong class="color00A2F7">[状态]</strong></p>
+					<p class="step-time">2011.06.20 10:01:01</p>
+				</div>
+				<div class="step-bar">
+					<p class="step-describe">步骤描述</p>
+					<i class='icon-sameAttr16 defined-agree'></i>
+					<p class="step-operator">操作人<strong class="color00A2F7">[状态]</strong></p>
+					<p class="step-time">2011.06.20 10:01:01</p>
+				</div>
+				
+			</div>	
+			
+			
+						
+			
+			<h4 style="margin-top: 40px;">详细说明悬浮(demo),将鼠标移上去看效果</h4>
+			
+			<div id="demoState" class="state-omit" style="width: 200px;cursor: pointer;">将鼠标移到我上面347888988789743982好的大幅度东方航空的对方即可</div>
+			
+			
+			<!--说明悬浮小框样式-->
+			<div class="state hide">
+				<div class="state-title"></div>
+				<span class="state-content"></span>
+			</div>
+			
+			
+			<!--详细说明小悬浮框交互-->
+			<script>
+				$('#demoState').mouseover(function(){
+					$('.state').removeClass('hide');
+					//将省略的文本内容赋值给悬浮小框的span里面
+					$('.state-content').text($('#demoState').text());
+					//提取文本的width赋值给.state
+					$('.state').width($('.state-content').width()+20);
+				})
+				$('#demoState').mouseout(function(){
+					$('.state').addClass('hide');
+				})
+				
+			</script>
+			
+			
+			
+			
+			
+			
+			
+			
+		</div><!--布局便于观看-->
+		
+	</body>
+</html>
+
+
